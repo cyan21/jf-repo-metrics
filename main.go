@@ -12,8 +12,8 @@ func main() {
 
 func getApp() components.App {
 	app := components.App{}
-	app.Name = "hello-frog"
-	app.Description = "Easily greet anyone."
+	app.Name = "repo-metric"
+	app.Description = "Provide metrics regarding RT repositories"
 	app.Version = "v0.1.2"
 	app.Commands = getCommands()
 	return app
@@ -21,5 +21,5 @@ func getApp() components.App {
 
 func getCommands() []components.Command {
 	return []components.Command{
-		commands.GetHelloCommand()}
+		commands.GetReportCommand()}
 }
